@@ -1,0 +1,30 @@
+<head>
+  <title>sample-app</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  
+  <nav class="main">
+    <a href="/">Home</a>
+    <a href="/about">About</a>  
+    <a href="/multilevel">Multilevel</a>
+  </nav>
+  
+  {{>layout}}
+</body>
+
+
+<template name="layout" >
+  <main class="main">
+    {{>Template.dynamic template=content}}
+  </main>  
+</template>
+
+<template name="layoutPanel">
+  <div class="layout--panel">
+    {{> Template.dynamic template=panelContent}}
+  </div>
+</template>
+
+

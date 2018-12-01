@@ -1,0 +1,12 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.main {
+  background-color: rgba(211,234,242,0.4);
+}
+
+.layout--panel {
+  background-color: rgba(131,45,245,.4);
+}
